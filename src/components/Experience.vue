@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center">Työkokemus</h2>
+    <h2 class="text-center my-3">Työkokemus</h2>
     <v-timeline>
       <v-timeline-item v-for="(job, j) in jobs" :key="j" :color="job.color">
         <template v-slot:opposite>
