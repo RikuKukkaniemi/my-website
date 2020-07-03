@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content >
+    <v-main >
       <Introduction class="my-6" />
       <v-divider />
       <Skills class="my-6" />
       <v-divider />
       <Experience class="my-6" />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
