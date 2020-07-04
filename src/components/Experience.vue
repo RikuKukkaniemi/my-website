@@ -10,11 +10,12 @@
           <v-card-title :class="`headline font-weight-bold ${job.color}--text`">{{ job.title }}</v-card-title>
           <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">{{ job.time }}</v-card-subtitle>
           <v-card-text>
-            <p v-for="(paragraph, p) in job.description" :key="p">
-              {{ paragraph }}
+            <p v-for="(paragraph, p) in job.description" :key="p">{{ paragraph }}</p>
+            <p v-if="job.link">
+              {{ job.link.description }}
+              <a :href="job.link.href">{{ job.link.href }}</a>
             </p>
-            <p v-if="job.link">{{ job.link.description }}<a :href="job.link.href">{{ job.link.href }}</a></p>
-            </v-card-text>
+          </v-card-text>
         </v-card>
       </v-timeline-item>
     </v-timeline>
@@ -30,8 +31,8 @@ export default {
         time: "01/2019-",
         title: "Paytrail",
         description: [
-          "Työskentelyä sovelluskehittäjänä Suomen kattavinta maksupalvelua tarjoavassa yrityksessä. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita.",
-        ],
+          "Työskentelyä sovelluskehittäjänä Suomen kattavinta maksupalvelua tarjoavassa yrityksessä. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita."
+        ]
       },
       {
         color: "blue",
@@ -39,7 +40,7 @@ export default {
         title: "Jyväskylän yliopisto",
         description: [
           "Työskentelyä tutkimusavustajana projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
-          'Projektin tuloksista kirjoitettiin tieteellinen julkaisu "Tekoälypohjaisten teknologioiden testaus prototyyppisovelluksilla". Julkaisussa kerrotaan projektissa käytetyistä tekoälyteknologoista ja esitellään toteutettuja prototyyppejä.',
+          'Projektin tuloksista kirjoitettiin tieteellinen julkaisu "Tekoälypohjaisten teknologioiden testaus prototyyppisovelluksilla". Julkaisussa kerrotaan projektissa käytetyistä tekoälyteknologoista ja esitellään toteutettuja prototyyppejä.'
         ],
         link: {
           description: "Linkki julkaisuun: ",
