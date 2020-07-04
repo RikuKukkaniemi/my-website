@@ -6,7 +6,7 @@
         <template v-slot:opposite>
           <span :class="`headline font-weight-bold ${job.color}--text`" v-text="job.time"></span>
         </template>
-        <v-card class="elevation-2">
+        <v-card class="elevation-2 mx-md-4 me-4">
           <v-card-title :class="`headline font-weight-bold ${job.color}--text`">{{ job.title }}</v-card-title>
           <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">{{ job.time }}</v-card-subtitle>
           <v-card-text>
@@ -30,7 +30,7 @@ export default {
         time: "01/2019-",
         title: "Paytrail",
         description: [
-          "Työskentelyä sovelluskehittäjänä Suomen kattavinta maksupalvelua tarjoavassa yrityksessä. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä.",
+          "Työskentelyä sovelluskehittäjänä Suomen kattavinta maksupalvelua tarjoavassa yrityksessä. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita.",
         ],
       },
       {
