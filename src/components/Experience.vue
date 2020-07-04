@@ -28,16 +28,16 @@ export default {
     jobs: [
       {
         color: "pink",
-        time: "01/2019-",
-        title: "Paytrail",
+        time: "01/2019 –",
+        title: "Sovelluskehittäjä, Paytrail",
         description: [
-          "Työskentelyä sovelluskehittäjänä Suomen kattavinta maksupalvelua tarjoavassa yrityksessä. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita."
+          "Työskentelyä sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita."
         ]
       },
       {
         color: "blue",
-        time: "01/2018-12/2018",
-        title: "Jyväskylän yliopisto",
+        time: "01/2018 – 12/2018",
+        title: "Tutkimusavustaja, Jyväskylän yliopisto",
         description: [
           "Työskentelyä tutkimusavustajana projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
           'Projektin tuloksista kirjoitettiin tieteellinen julkaisu "Tekoälypohjaisten teknologioiden testaus prototyyppisovelluksilla". Julkaisussa kerrotaan projektissa käytetyistä tekoälyteknologoista ja esitellään toteutettuja prototyyppejä.'
