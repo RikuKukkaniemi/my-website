@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar />
-    <v-main >
+    <v-main class="mx-md-10">
       <Introduction class="my-6" />
       <v-divider />
       <Skills class="my-6" />
