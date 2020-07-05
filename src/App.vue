@@ -10,6 +10,7 @@
       <v-divider />
       <Education class="my-6" />
     </v-main>
+    <BottomNavBar />
   </v-app>
 </template>
 
@@ -19,6 +20,7 @@ import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import BottomNavBar from "./components/BottomNavBar";
 
 export default {
   components: {
@@ -27,6 +29,7 @@ export default {
     Skills,
     Experience,
     Education,
+    BottomNavBar,
   }
 };
 </script>
