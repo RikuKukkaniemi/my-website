@@ -1,7 +1,8 @@
 <template>
   <div>
     <h2 class="text-center my-3">Koulutus</h2>
-    <v-expansion-panels multiple inset class="px-5">
+    <v-card elevation="0" color="transparent" class="mx-auto px-3" max-width="600">
+    <v-expansion-panels multiple inset>
       <v-expansion-panel v-for="(education, e) in educations" :key="e">
         <v-expansion-panel-header>{{ education.title }}</v-expansion-panel-header>
         <v-expansion-panel-content>
@@ -13,6 +14,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    </v-card>
   </div>
 </template>
 
