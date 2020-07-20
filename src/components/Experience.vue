@@ -3,7 +3,7 @@
     <h2 class="text-center my-3">Työkokemus</h2>
     <v-card elevation="0" color="transparent" class="mx-auto" max-width="1500">
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-        <v-timeline-item v-for="(job, j) in jobs" :key="j" :color="job.color">
+        <v-timeline-item v-for="(job, j) in jobs" :key="j" :color="job.color" fill-dot>
           <template v-slot:opposite>
             <span :class="`headline font-weight-bold ${job.color}--text`" v-text="job.time"></span>
           </template>
@@ -33,15 +33,15 @@ export default {
         time: "01/2019 –",
         title: "Sovelluskehittäjä, Paytrail",
         description: [
-          "Työskentelyä sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita."
+          "Sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -sunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita."
         ]
       },
       {
-        color: "indigo",
+        color: "orange",
         time: "01/2018 – 12/2018",
         title: "Tutkimusavustaja, Jyväskylän yliopisto",
         description: [
-          "Työskentelyä tutkimusavustajana projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
+          "Tutkimusavustajana projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
           'Projektin tuloksista kirjoitettiin tieteellinen julkaisu "Tekoälypohjaisten teknologioiden testaus prototyyppisovelluksilla". Julkaisussa kerrotaan projektissa käytetyistä tekoälyteknologoista ja esitellään toteutettuja prototyyppejä.'
         ],
         link: {
