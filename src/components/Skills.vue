@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="text-center my-3">Osaaminen</h2>
-
+    <HeaderUnderliner />
     <v-card class="mx-auto" max-width="300">
       <v-list flat>
         <v-subheader>Backend</v-subheader>
@@ -35,54 +35,59 @@
 </template>
 
 <script>
+import HeaderUnderliner from './utility/HeaderUnderliner';
+
 export default {
+  components: {
+    HeaderUnderliner,
+  },
   data: () => ({
     backend: [
       {
         icon: {
           color: "red",
-          code: "mdi-laravel"
+          code: "mdi-laravel",
         },
-        text: "Laravel"
+        text: "Laravel",
       },
       {
         icon: {
           color: "blue",
-          code: "mdi-language-php"
+          code: "mdi-language-php",
         },
-        text: "PHP"
+        text: "PHP",
       },
       {
         icon: {
           color: "blue",
-          code: "mdi-language-python"
+          code: "mdi-language-python",
         },
-        text: "Python"
-      }
+        text: "Python",
+      },
     ],
     frontend: [
       {
         icon: {
           color: "green",
-          code: "mdi-vuejs"
+          code: "mdi-vuejs",
         },
-        text: "Vue.js"
+        text: "Vue.js",
       },
       {
         icon: {
           color: "yellow",
-          code: "mdi-language-javascript"
+          code: "mdi-language-javascript",
         },
-        text: "JavaScript"
+        text: "JavaScript",
       },
       {
         icon: {
           color: "blue",
-          code: "mdi-vuetify"
+          code: "mdi-vuetify",
         },
-        text: "Vuetify"
-      }
-    ]
-  })
+        text: "Vuetify",
+      },
+    ],
+  }),
 };
 </script>
