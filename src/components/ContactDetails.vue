@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-btn
-      v-for="(contact, c) in contacts"
-      :key="c"
+      v-for="contact in contacts"
+      :key="contact"
       class="mx-4 white--text"
       icon
       :href="contact.href"
@@ -18,13 +18,13 @@ export default {
     contacts: [
       {
         icon: "mdi-github",
-        href: "https://github.com/RikuKukkaniemi"
+        href: "https://github.com/RikuKukkaniemi",
       },
       {
         icon: "mdi-linkedin",
-        href: "https://www.linkedin.com/in/riku-kukkaniemi-7a3942167/"
-      }
-    ]
-  })
+        href: "https://www.linkedin.com/in/riku-kukkaniemi-7a3942167/",
+      },
+    ],
+  }),
 };
 </script>
