@@ -1,8 +1,17 @@
 <template>
   <v-app-bar max-height="70" dense elevate-on-scroll>
     <v-tabs centered>
-      <v-tab>Suomeksi</v-tab>
-      <v-tab>In English</v-tab>
+      <ContactDetails />
     </v-tabs>
   </v-app-bar>
 </template>
+
+<script>
+import ContactDetails from "./ContactDetails";
+
+export default {
+  components: {
+    ContactDetails,
+  },
+};
+</script>
