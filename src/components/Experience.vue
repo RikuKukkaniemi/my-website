@@ -39,7 +39,7 @@ export default {
         time: "01/2019 –",
         title: "Sovelluskehittäjä, Paytrail",
         description: [
-          "Sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -suunnittelua 4-5 hengen tiimeissä. Sovelluskehityksessä toteutettu SOLID-arkkitehtuuriperiaatteita.",
+          "Sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -suunnittelua 4-5 hengen tiimeissä.",
         ],
       },
       {
