@@ -1,45 +1,29 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="mx-md-10">
-      <section id="introduction">
-        <Introduction class="mx-auto" />
-        <v-row align="center" class="mx-auto" justify="center">
-          <DownButton target="#skills" />
-        </v-row>
+    <v-content class="mx-md-10 mb-16">
+      <section id="welcome">
+        <Welcome class="mx-auto my-16 pb-16" />
       </section>
 
-      <v-divider class="my-6" />
+      <section id="introduction">
+        <v-divider class="my-16" />
+        <Introduction class="mx-auto pb-16" />
+      </section>
 
       <section id="skills">
-        <v-row align="center" class="mx-auto" justify="center">
-          <UpButton target="#introduction" />
-        </v-row>
-        <Skills class="my-6" />
-        <v-row align="center" class="mx-auto" justify="center">
-          <DownButton target="#experience" />
-        </v-row>
+        <v-divider class="my-16" />
+        <Skills class="pb-16" />
       </section>
-
-      <v-divider class="my-6" />
 
       <section id="experience">
-        <v-row align="center" class="mx-auto" justify="center">
-          <UpButton target="#skills" />
-        </v-row>
-        <Experience class="my-6" />
-        <v-row align="center" class="mx-auto" justify="center">
-          <DownButton target="#education" />
-        </v-row>
+        <v-divider class="my-16" />
+        <Experience class="pb-16" />
       </section>
 
-      <v-divider class="my-6" />
-
       <section id="education">
-        <v-row align="center" class="mx-auto" justify="center">
-          <UpButton target="#experience" />
-        </v-row>
-        <Education class="my-6" />
+        <v-divider class="my-16" />
+        <Education class="pb-16" />
       </section>
     </v-content>
     <BottomNavBar />
@@ -48,24 +32,22 @@
 
 <script>
 import NavBar from "./components/NavBar";
+import Welcome from "./components/Welcome";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import BottomNavBar from "./components/BottomNavBar";
-import DownButton from "./components/utility/DownButton";
-import UpButton from "./components/utility/UpButton";
 
 export default {
   components: {
     NavBar,
     Introduction,
+    Welcome,
     Skills,
     Experience,
     Education,
     BottomNavBar,
-    DownButton,
-    UpButton,
   },
 };
 </script>
