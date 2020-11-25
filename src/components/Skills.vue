@@ -3,91 +3,109 @@
     <h2 class="text-center my-3">Osaaminen</h2>
     <HeaderUnderliner />
     <v-card class="mx-auto" max-width="300">
-      <v-list flat>
-        <v-subheader>Backend</v-subheader>
-        <v-list-item-group>
-          <v-list-item v-for="(language, l) in backend" :key="l">
-            <v-list-item-icon>
-              <v-icon :color="language.icon.color" v-text="language.icon.code"></v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title v-text="language.text"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-      <v-divider />
-      <v-list flat>
-        <v-subheader>Frontend</v-subheader>
-        <v-list-item-group>
-          <v-list-item v-for="(language, l) in frontend" :key="l">
-            <v-list-item-icon>
-              <v-icon :color="language.icon.color" v-text="language.icon.code"></v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title v-text="language.text"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+      <div v-for="(category, c) in skillCategory" :key="c">
+        <v-list flat>
+          <v-subheader>{{ c }}</v-subheader>
+          <v-list-item-group>
+            <v-list-item v-for="(language, l) in category" :key="l">
+              <v-list-item-icon>
+                <v-icon
+                  :color="language.icon.color"
+                  v-text="language.icon.code"
+                ></v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title v-text="language.text"></v-list-item-title>
+              </v-list-item-content>
+              <StarRating :rating="language.rating" />
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+        <v-divider />
+      </div>
     </v-card>
+    <div class="text-center mt-5">
+      <h3 class="mb-3">Selitykset tähdille:</h3>
+      <p class="mb-5">
+        <StarRating rating=3 />
+        Päivittäisessä käytössä kehittynyt taito.
+      </p>
+      <p class="my-5">
+        <StarRating rating=2 />
+        Vahvaa osaamista taidosta, vaikkei olekaan päivittäisessä käytössä.
+      </p>
+      <p class="mt-5">
+        <StarRating rating=1 />
+        Opittu, mutta vähällä käytöllä ollut taito.
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
-import HeaderUnderliner from './utility/HeaderUnderliner';
+import HeaderUnderliner from "./utility/HeaderUnderliner";
+import StarRating from "./utility/StarRating";
 
 export default {
   components: {
     HeaderUnderliner,
+    StarRating,
   },
   data: () => ({
-    backend: [
-      {
-        icon: {
-          color: "red",
-          code: "mdi-laravel",
+    skillCategory: {
+      backend: [
+        {
+          icon: {
+            color: "red",
+            code: "mdi-laravel",
+          },
+          text: "Laravel",
+          rating: 3,
         },
-        text: "Laravel",
-      },
-      {
-        icon: {
-          color: "blue",
-          code: "mdi-language-php",
+        {
+          icon: {
+            color: "blue",
+            code: "mdi-language-php",
+          },
+          text: "PHP",
+          rating: 3,
         },
-        text: "PHP",
-      },
-      {
-        icon: {
-          color: "blue",
-          code: "mdi-language-python",
+        {
+          icon: {
+            color: "blue",
+            code: "mdi-language-python",
+          },
+          text: "Python",
+          rating: 1,
         },
-        text: "Python",
-      },
-    ],
-    frontend: [
-      {
-        icon: {
-          color: "green",
-          code: "mdi-vuejs",
+      ],
+      frontend: [
+        {
+          icon: {
+            color: "green",
+            code: "mdi-vuejs",
+          },
+          text: "Vue.js",
+          rating: 2,
         },
-        text: "Vue.js",
-      },
-      {
-        icon: {
-          color: "yellow",
-          code: "mdi-language-javascript",
+        {
+          icon: {
+            color: "yellow",
+            code: "mdi-language-javascript",
+          },
+          text: "JavaScript",
+          rating: 2,
         },
-        text: "JavaScript",
-      },
-      {
-        icon: {
-          color: "blue",
-          code: "mdi-vuetify",
+        {
+          icon: {
+            color: "blue",
+            code: "mdi-vuetify",
+          },
+          text: "Vuetify",
+          rating: 2,
         },
-        text: "Vuetify",
-      },
-    ],
+      ],
+    },
   }),
 };
 </script>
