@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center my-3">Koulutus</h2>
+    <p class="text-center my-3 text-h4">Koulutus</p>
     <HeaderUnderliner />
     <v-card elevation="0" color="transparent" class="mx-auto px-3" max-width="800">
       <v-expansion-panels multiple inset>
