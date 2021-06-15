@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h2 class="text-center my-3">Työkokemus</h2>
+    <p class="text-center my-3 text-h4">Työkokemus</p>
     <HeaderUnderliner />
     <v-card elevation="0" color="transparent" class="mx-auto" max-width="1500">
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-        <v-timeline-item v-for="(job, j) in jobs" :key="j" :color="job.color" fill-dot>
+        <v-timeline-item v-for="(job, j) in jobs" :key="j">
           <template v-slot:opposite>
-            <span :class="`headline font-weight-bold ${job.color}--text`" v-text="job.time"></span>
+            <span :class="`headline font-weight-bold`" v-text="job.time"></span>
           </template>
           <v-card class="elevation-2 mx-md-4 me-4">
-            <v-card-title :class="`headline font-weight-bold ${job.color}--text`">{{ job.title }}</v-card-title>
+            <v-card-title :class="`headline font-weight-boldt`">{{ job.title }}</v-card-title>
             <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">{{ job.time }}</v-card-subtitle>
             <v-card-text>
               <p v-for="(paragraph, p) in job.description" :key="p">{{ paragraph }}</p>
@@ -35,19 +35,17 @@ export default {
   data: () => ({
     jobs: [
       {
-        color: "pink",
         time: "01/2019 –",
-        title: "Sovelluskehittäjä, Paytrail",
+        title: "Software Developer, Paytrail",
         description: [
-          "Sovelluskehittäjänä Suomen johtavassa maksupalvelussa. Työnkuvaan kuuluu backend painotteista sovelluskehitystä ja -suunnittelua 4-5 hengen tiimeissä.",
+          "Paytraililla olen päässyt työstämään verkkokauppoihin integroitavaa maksupalvelua. Työnkuvaan kuuluu pääsääntöisesti backend painotteista sovelluskehitystä ja -suunnittelua 4-5 hengen tiimeissä. Työtä tehdään laatu edellä, joten hyvät laadunhallintakäytänteet ovat tuttuja.",
         ],
       },
       {
-        color: "orange",
         time: "01/2018 – 12/2018",
-        title: "Tutkimusavustaja, Jyväskylän yliopisto",
+        title: "Research Programmer, Jyväskylän yliopisto",
         description: [
-          "Tutkimusavustajana projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
+          "Työskentelin projektissa, jossa selvitettiin, miten tekoälyä voitaisiin hyödyntää terveydenhuollossa. Työnkuvaan kuului tekoälyprototyyppien suunnittelua ja ohjelmointia 3-5 hengen tiimeissä.",
           'Projektin tuloksista kirjoitettiin tieteellinen julkaisu "Tekoälypohjaisten teknologioiden testaus prototyyppisovelluksilla". Julkaisussa kerrotaan projektissa käytetyistä tekoälyteknologoista ja esitellään toteutettuja prototyyppejä.',
         ],
         link: {
