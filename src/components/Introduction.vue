@@ -9,8 +9,8 @@
       width="900px"
     >
       <v-card-subtitle class="pb-10"
-        ><v-avatar size="128">
-          <img src="../assets/profile.jpg" alt="Riku" /> </v-avatar
+        ><v-avatar size="200">
+          <img src="../assets/face.png" alt="my picture" /> </v-avatar
       ></v-card-subtitle>
       <v-card-text class="px-14">
         <div class="text--primary body-1">
