@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-btn
-      v-for="contact in contacts"
-      :key="contact"
+      v-for="(contact, index) in contacts"
+      :key="index"
       class="mx-4 white--text"
       icon
       :href="contact.href"
