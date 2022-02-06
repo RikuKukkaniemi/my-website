@@ -1,14 +1,13 @@
 <template>
   <v-card elevation="0" color="transparent" class="mx-auto text-center">
-    <v-card-subtitle class="text--primary text-h2">Moi!</v-card-subtitle>
-    <v-card-subtitle class="text--primary text-h5 pa-1">Nimeni on Riku ja olen sovelluskehittäjä.</v-card-subtitle>
-    <v-card-subtitle class="text--primary text-h5 pa-1">Tervetuloa sivuilleni!</v-card-subtitle>
+    <v-card-subtitle class="text--primary text-h2">Hi there!</v-card-subtitle>
+    <v-card-subtitle class="text--primary text-h5 pa-1">My name is Riku and I'm a software developer.</v-card-subtitle>
+    <v-card-subtitle class="text--primary text-h5 pa-1">Welcome to my website!</v-card-subtitle>
     <v-card-text class="mt-6">
       <v-spacer />
-      <MoveButton class="ma-2" text="Esittely" target="#introduction" />
-      <MoveButton class="ma-2" text="Osaaminen" target="#skills" />
-      <MoveButton class="ma-2" text="Työkokemus" target="#experience" />
-      <MoveButton class="ma-2" text="Koulutus" target="#education" />
+      <MoveButton class="ma-2" text="Introduction" target="#introduction" />
+      <MoveButton class="ma-2" text="Skills" target="#skills" />
+      <MoveButton class="ma-2" text="Projects" target="#projects" />
       <v-spacer />
     </v-card-text>
   </v-card>
