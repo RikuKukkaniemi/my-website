@@ -1,6 +1,13 @@
 # My Website
 
-...
+My website running at https://rikukukkaniemi.com/
+
+Dev stack:
+- Vue
+- Vuetify
+- Docker
+
+The website is hosted in Google Cloud Platform.
 
 ## Project setup
 ```
